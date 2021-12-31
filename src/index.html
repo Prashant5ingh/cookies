@@ -1,13 +1,51 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MyApp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
+<!DOCTYPE html>  
+<!-- index.php !-->  
+<html>  
+     <head>  
+          <title>Angular IOT</title>  
+          <base href="/">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+          <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> 
+          
+     </head>  
+     <body style="background-image :url('https://free4kwallpapers.com/uploads/originals/2020/05/13/-insane-sunset-environment-wallpaper.jpg'); background-size:cover; background-repeat: no-repeat;"
+     >  
+          <br /><br />  
+          
+          
+          
+          <app-root></app-root> 
+ 
+     </body>  
+</html>  
+<!--<script>  
+
+var app = angular.module('myapp',[]);
+app.controller('usercontroller',function($scope,$http){
+$scope.insertData = function(){
+
+$http.post("insert.php",
+{'id_ajax':$scope.id_send, 'name_ajax':$scope.name_send}
+).success(function(data){
+alert(data);
+$scope.name_send = null;
+$scope.id_send = null; 
+$scope.displayData();
+})
+
+
+} // click 
+
+     $scope.displayData = function(){  
+          $http.get("select.php").success(function(data){  
+          
+               $scope.codes = data;  
+          });  
+     }  
+
+
+
+})  controller ends 
+
+
+</script>  -->
