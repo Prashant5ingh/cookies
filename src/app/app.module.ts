@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CookieService } from 'ngx-cookie-service';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NewsComponent } from './news/news.component';
+import { PutrequestComponent } from './putrequest/putrequest.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewsComponent,
+    PutrequestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
