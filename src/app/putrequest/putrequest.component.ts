@@ -15,14 +15,14 @@ export class PutrequestComponent implements OnInit {
     // this.http.post<Article>('https://jsonplaceholder.typicode.com/posts/', { title: 'Angular POST Request Example of jsonplaceholder',API:'Fake Rest API' }).subscribe(data => {
     //   this.postId = data.id;
     // })}
-  //   this.http.post<Article>('https://reqres.in/api/users', { name: 'Angular POST Request Example of reqres' ,API:'Fake Rest API' }).subscribe(data => {
+    this.http.post<Article>('https://reqres.in/api/users', { name: 'Angular POST Request Example of reqres' ,API:'Fake Rest API' }).subscribe(data => {
       
-  //     this.postId = data.id;
-  // })}
-  const body = { name: 'Angular PUT Request Example',API:'Fake Rest API' };
-    this.http.put<Article2>('https://jsonplaceholder.typicode.com/posts/2', body)
-        .subscribe(data => this.postId = data.id);
-}
+      this.postId = data.id;
+  })}
+//   const body = { name: 'Angular PUT Request Example',API:'Fake Rest API' };
+//     this.http.put<Article2>('https://jsonplaceholder.typicode.com/posts/2', body)
+//         .subscribe(data => this.postId = data.id);
+// }
 
 }
 interface Article {

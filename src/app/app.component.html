@@ -1,3 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: large;">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">MyDash</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/news" routerLinkActive="active">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/requests" routerLinkActive="active">Requests</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="main" style="margin-left:5%">
+  <!-- <nav>
+    <a routerLink="/news" routerLinkActive="active">News API</a>
+    <a routerLink="/requests" routerLinkActive="active">Requests</a>
+  </nav> -->
+ 
 <form class="form-signin">
 
   <img class="mb-4" src="https://angular.io/assets/images/logos/angular/angular.png" alt="" width="72" height="72">
@@ -6,14 +46,14 @@
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   
   
-  <label for="inputEmail" class="sr-only">Email address</label>
+  <label for="inputEmail" class="sr-only" width="72">Email address</label>
 
   
-  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
-  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus style="width:30%;">
+  <label for="inputPassword" class="sr-only" >Password</label>
   
   
-  <input type="password" id="inputPassword" class="form-control" placeholder="Password"> 
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password"  style="width:30%;"> 
   <div class="checkbox mb-3">
   
   <label>
@@ -22,17 +62,15 @@
   </label>
 
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="button" (click)="login()">Sign In</button>
+  <button class="btn btn-lg btn-primary btn-block" type="button"  style="width:30%;" (click)="login()">Sign In</button>
   
   
   </form>
-  <div>
-  <app-news></app-news>
-</div>
+  <!-- <app-news></app-news> -->
+ 
 
 
-<div>
-
-  <h3 class="p-3 text-center">Angular HTTP POST Request Examples</h3>
-  <app-putrequest></app-putrequest>
+<router-outlet>
+  
+</router-outlet>
 </div>

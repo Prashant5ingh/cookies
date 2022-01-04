@@ -2,16 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NewsComponent } from './news/news.component';
-import { PutrequestComponent } from './putrequest/putrequest.component';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { AppComponent} from './app.component';
+//import { NewsComponent } from './news/news.component';
+//import { PutrequestComponent } from './putrequest/putrequest.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewsComponent,
-    PutrequestComponent
+    routingComponents,
+    
+    
   ],
   imports: [
     BrowserModule,
