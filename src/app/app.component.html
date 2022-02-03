@@ -1,5 +1,8 @@
 
-          
+          <nav>
+            <a routerLink="home">Home Component</a>
+            <a routerLink="lazy">Lazy Module</a>
+          </nav>
           <div class="container" ng-app="myapp" ng-controller="mycontroller" ng-init="displayData" >  
             <!-- <h3 align="center" style="color: aliceblue; "><strong>Temperature</strong></h3>   -->
             <br /><br />
@@ -45,7 +48,8 @@
                </table>
                <br>
                <br>
-                
-                <app-graphs></app-graphs>             
+                <!-- <app-graphs></app-graphs> -->
+                <!-- <app-mychart></app-mychart>            -->
+                <router-outlet></router-outlet>
             </div> 
         

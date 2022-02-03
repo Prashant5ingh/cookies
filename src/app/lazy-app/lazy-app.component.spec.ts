@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MychartComponent } from './mychart.component';
+import { LazyAppComponent } from './lazy-app.component';
 
-describe('MychartComponent', () => {
-  let component: MychartComponent;
-  let fixture: ComponentFixture<MychartComponent>;
+describe('LazyAppComponent', () => {
+  let component: LazyAppComponent;
+  let fixture: ComponentFixture<LazyAppComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MychartComponent ]
+      declarations: [ LazyAppComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MychartComponent);
+    fixture = TestBed.createComponent(LazyAppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
